@@ -4,16 +4,15 @@ public class Jewelry extends FixedAsset {
 
     private double karat;
 
-    public Jewelry(String name, double marketValue, double karat) {
-        super(name, marketValue);
+    public Jewelry(String name, double karat) {
+        super(name, karat * 1000);
         this.karat = karat;
     }
 
     // abstract interface method
     @Override
     public double getValue() {
-
-        return this.karat * (getMarketValue()/this.karat);
+        return getMarketValue();
     }
 
     public double getKarat() {

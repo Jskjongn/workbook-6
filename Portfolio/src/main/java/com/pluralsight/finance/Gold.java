@@ -4,16 +4,15 @@ public class Gold extends FixedAsset {
 
     private double weight;
 
-    public Gold(String name, double marketValue, double weight) {
-        super(name, marketValue);
+    public Gold(double weight) {
+        super("Gold", weight * 3000);
         this.weight = weight;
     }
 
     // abstract interface method
     @Override
     public double getValue() {
-
-        return this.weight * (getMarketValue()/this.weight);
+        return getMarketValue();
     }
 
     public double getWeight() {

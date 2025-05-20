@@ -14,11 +14,11 @@ public class CreditCard implements Valuable {
 
     // derived methods
     public void charge(double amount) {
-
+        this.balance -= amount;
     }
 
     public void pay(double amount) {
-
+        this.balance += amount;
     }
 
     // getter and setters
@@ -49,7 +49,6 @@ public class CreditCard implements Valuable {
     // abstract interface method
     @Override
     public double getValue() {
-
-        return 0;
+        return -getBalance();
     }
 }

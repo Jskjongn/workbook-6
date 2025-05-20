@@ -14,12 +14,10 @@ public class BankAccount implements Valuable {
 
     // derived methods
     public void deposit(double amount) {
-
         this.balance += amount;
     }
 
     public void withdraw(double amount) {
-
         this.balance -= amount;
     }
 
@@ -51,7 +49,6 @@ public class BankAccount implements Valuable {
     // abstract interface method
     @Override
     public double getValue() {
-
-        return 0;
+        return getBalance();
     }
 }

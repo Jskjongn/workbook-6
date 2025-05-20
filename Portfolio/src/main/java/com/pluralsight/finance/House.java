@@ -6,8 +6,8 @@ public class House extends FixedAsset {
     private int squareFeet;
     private int bedrooms;
 
-    public House(String name, double marketValue, int yearBuilt, int squareFeet, int bedrooms) {
-        super(name, marketValue);
+    public House(int yearBuilt, int squareFeet, int bedrooms) {
+        super("House", squareFeet * 150);
         this.yearBuilt = yearBuilt;
         this.squareFeet = squareFeet;
         this.bedrooms = bedrooms;
@@ -41,7 +41,6 @@ public class House extends FixedAsset {
     // abstract interface method
     @Override
     public double getValue() {
-
-        return 0;
+        return getMarketValue();
     }
 }
