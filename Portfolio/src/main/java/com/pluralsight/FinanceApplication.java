@@ -1,4 +1,6 @@
-package com.pluralsight.finance;
+package com.pluralsight;
+
+import com.pluralsight.finance.BankAccount;
 
 public class FinanceApplication {
 
