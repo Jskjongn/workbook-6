@@ -51,4 +51,9 @@ public class BankAccount implements Valuable {
     public double getValue() {
         return getBalance();
     }
+
+    @Override
+    public String toString(){
+        return this.name + " - " + this.balance;
+    }
 }

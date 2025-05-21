@@ -32,5 +32,8 @@ public  abstract class FixedAsset implements Valuable {
         this.marketValue = marketValue;
     }
 
-
+    @Override
+    public String toString(){
+        return this.name + " - " + this.marketValue;
+    }
 }

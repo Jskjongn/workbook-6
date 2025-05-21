@@ -51,4 +51,9 @@ public class CreditCard implements Valuable {
     public double getValue() {
         return -getBalance();
     }
+
+    @Override
+    public String toString(){
+        return this.name + " - " + this.accountNumber + " - " + this.balance;
+    }
 }

@@ -43,4 +43,5 @@ public class House extends FixedAsset {
     public double getValue() {
         return getMarketValue();
     }
+
 }
